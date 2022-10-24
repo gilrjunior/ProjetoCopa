@@ -17,16 +17,15 @@ public class Principal {
         boolean titular;
             
        do{ 
-           opc = Integer.parseInt(JOptionPane.showInputDialog("1- Inserir jogador 2- Sair e mostrar"));
-
-            
+                     
             Nome = JOptionPane.showInputDialog("Insira o nome do jogador: ");
             posicao = JOptionPane.showInputDialog("Insira a posicao de "+Nome+": ");
             numero = Integer.parseInt(JOptionPane.showInputDialog("Insira o numero de "+Nome+": "));
             titular = Boolean.getBoolean(JOptionPane.showInputDialog(Nome+" é titula? True or False")); 
-            
-            
+                        
             listajogadores.add(new Selecao(Nome, posicao, numero, titular));
+            
+             opc = Integer.parseInt(JOptionPane.showInputDialog("1- Inserir jogador 2- Sair e mostrar"));
             
         }while(opc != 2);
         
